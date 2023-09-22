@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Kholodos';
+    src: local('Kholodos'), local('KholodosRegular'),
+        url(../fonts/KholodosRegular.woff2) format('woff2'),
+        url(../fonts/KholodosRegular.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vin Slab Pro';
+    src: local('VinSlabPro-LightItalic'),
+        url(../fonts/VinSlabPro-LightItalic.woff2) format('woff2'),
+        url(../fonts/VinSlabPro-LightItalic.woff) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?44i4uo');
+    src:  url('../fonts/icomoon.eot?44i4uo#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?44i4uo') format('truetype'),
+      url('../fonts/icomoon.woff?44i4uo') format('woff'),
+      url('../fonts/icomoon.svg?44i4uo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+    
+  i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+      
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-telegram:before {
+    content: "\e900";
+  }
+  .icon-odnoklassniki:before {
+    content: "\e901";
+  }
+  .icon-vk:before {
+    content: "\e902";
+  }

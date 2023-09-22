@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.cover {
+  background: #5e5f6e;
+  padding-bottom: 10px;
+}
+.cover .my_foto {
+  width: 90%;
+  max-width: 200px;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+.cover .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.greetings {
+  padding: 15px 20px;
+}
+.greetings_text {
+  font-family: "Vin Slab Pro";
+  font-size: 32px;
+  color: #e7d5c0;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .greetings_text {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .greetings_text {
+    font-size: 20px;
+  }
+}
+.greetings_sign {
+  font-family: "Kholodos";
+  font-size: 38px;
+  font-weight: 100;
+  color: #e7d5c0;
+  text-align: right;
+  padding-right: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .greetings_sign {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .greetings_sign {
+    font-size: 24px;
+  }
+}
+
+.warning_text_ul, .warning_text_titel {
+  font-family: "Vin Slab Pro";
+  font-size: 24px;
+  color: #e7d5c0;
+  text-align: left;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .warning_text_ul, .warning_text_titel {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .warning_text_ul, .warning_text_titel {
+    font-size: 16px;
+  }
+}
+.warning_text_ul_titel, .warning_text_titel_titel {
+  text-align: center;
+}
+
+details {
+  min-height: 5px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 22px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+details + details {
+  margin-top: 20px;
+}
+
+details[open] {
+  min-height: 50px;
+}
+
+details[open] summary ~ * {
+  -webkit-animation: anspl 0.3s cubic-bezier(0.52, 0.41, 0.75, 0.74);
+          animation: anspl 0.3s cubic-bezier(0.52, 0.41, 0.75, 0.74);
+}
+
+.gallery {
+  background: #e7d5c0;
+  padding-bottom: 10px;
+}
+.gallery .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.gallery .paint_img {
+  width: 70%;
+  max-width: 350px;
+  margin: 15px 15px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 767px) {
+  .gallery .paint_img {
+    max-width: 95%;
+  }
+}
+.gallery .paint__titel__link {
+  text-decoration: none;
+  color: black;
+}
+.gallery .paint__titel__link:hover {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.gallery .paint__titel__link:hover .paint_img {
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.gallery h2 {
+  font-family: "Vin Slab Pro";
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .gallery h2 {
+    font-size: 24px;
+  }
+}
+.gallery h3 {
+  font-family: "Vin Slab Pro";
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .gallery h3 {
+    font-size: 20px;
+  }
+}
+
+.social-icons-6 {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-6 a {
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 6px;
+  font-size: 26px;
+  overflow: hidden;
+  position: relative;
+  color: #337AB7;
+  border: 2px solid #337AB7;
+  transition: all 0.2s linear 0s;
+}
+
+.social-icons-6 a:after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 90%;
+  top: -110%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  background-color: #337AB7;
+  border-radius: 50%;
+}
+
+.social-icons-6 a i,
+.social-icons-6 a img {
+  position: relative;
+  z-index: 1;
+}
+
+.social-icons-6 a img {
+  width: 26px;
+  height: 26px;
+}
+
+.social-icons-6 a:hover {
+  color: #fff;
+}
+
+.social-icons-6 a:hover:after {
+  top: 5%;
+  transition: all 0.2s linear 0s;
+}
+
+.footer {
+  background: #5e5f6e;
+}
+.footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+  min-height: 100px;
+}
+@media screen and (max-width: 767px) {
+  .footer .row {
+    min-height: 60px;
+  }
+}/*# sourceMappingURL=index_style.css.map */
